@@ -41,6 +41,9 @@ public class TSM : MonoBehaviour {
 			Vector2 nextNode = currentNode;
 			Vector2 nextNodeDirection = currentDirection;
 			foreach (var node in nodes) {
+				// the first node is always a duplicate of the current node
+				// but it has to remain in the list of nodes to make sure that the ring
+				// is closed.
 				if (skipFirst) {
 					skipFirst = false;
 					continue;
@@ -57,7 +60,8 @@ public class TSM : MonoBehaviour {
 					}
 				}
 				else {
-					// catch duplicate node
+					// catch duplicate node: rare possibility
+					Debug.Log("Duplicate node!");
 					smallestAngle = 0.0f;
 					smallestDistance = distance;
 					nextNode = node;
