@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: NaN, g: NaN, b: NaN, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -88,7 +88,6 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaDirect: 0.5
     m_PVRFilteringAtrousPositionSigmaIndirect: 2
     m_PVRFilteringAtrousPositionSigmaAO: 1
-    m_ShowResolutionOverlay: 1
   m_LightingDataAsset: {fileID: 0}
   m_UseShadowmask: 1
 --- !u!196 &4
@@ -177,7 +176,6 @@ Camera:
   m_TargetEye: 3
   m_HDR: 1
   m_AllowMSAA: 1
-  m_AllowDynamicResolution: 0
   m_ForceIntoRT: 0
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
@@ -206,7 +204,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bfb4946abb91742a4874cfcca785d9ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  numberOfCities: 20
+  numberOfCities: 100
   radius: 100
   nodePrefab: {fileID: 4807749735194334, guid: 868164edb7f5149fa95f9b956ab2d629, type: 2}
   linePrefab: {fileID: 120378074678548972, guid: 20ab3bb87d9b24eb2801f4fe5955ecf8,
